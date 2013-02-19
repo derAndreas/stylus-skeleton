@@ -307,338 +307,335 @@ form textarea {
 .add-bottom {
   margin-bottom: 20px !important;
 }
-.container {
+.ct {
   margin: 0 auto;
   padding: 0;
   position: relative;
   width: 960px;
 }
-.container .column,
-.container .columns {
+.ct .col,
+.ct .cols {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
 }
-.container .column.alpha,
-.container .columns.alpha {
+.ct .col.alpha,
+.ct .cols.alpha {
   margin-left: 0;
 }
-.container .column.omega,
-.container .columns.omega {
+.ct .col.omega,
+.ct .cols.omega {
   margin-right: 0;
 }
-.container .one.column {
+.ct .one.column {
   width: 40px;
 }
-.container .one.columns {
+.ct .one.cols {
   width: 40px;
 }
-.container .two.columns {
+.ct .two.cols {
   width: 100px;
 }
-.container .three.columns {
+.ct .three.cols {
   width: 160px;
 }
-.container .four.columns {
+.ct .four.cols {
   width: 220px;
 }
-.container .five.columns {
+.ct .five.cols {
   width: 280px;
 }
-.container .six.columns {
+.ct .six.cols {
   width: 340px;
 }
-.container .seven.columns {
+.ct .seven.cols {
   width: 400px;
 }
-.container .eight.columns {
+.ct .eight.cols {
   width: 460px;
 }
-.container .nine.columns {
+.ct .nine.cols {
   width: 520px;
 }
-.container .ten.columns {
+.ct .ten.cols {
   width: 580px;
 }
-.container .eleven.columns {
+.ct .eleven.cols {
   width: 640px;
 }
-.container .twelve.columns {
+.ct .twelve.cols {
   width: 700px;
 }
-.container .thirteen.columns {
+.ct .thirteen.cols {
   width: 760px;
 }
-.container .fourteen.columns {
+.ct .fourteen.cols {
   width: 820px;
 }
-.container .fithteen.columns {
+.ct .fithteen.cols {
   width: 880px;
 }
-.container .sixteen.columns {
+.ct .sixteen.cols {
   width: 940px;
 }
-.container .offset-by-one {
+.ct .offone {
   padding-left: 60px;
 }
-.container .offset-by-two {
+.ct .offtwo {
   padding-left: 120px;
 }
-.container .offset-by-three {
+.ct .offthree {
   padding-left: 180px;
 }
-.container .offset-by-four {
+.ct .offfour {
   padding-left: 240px;
 }
-.container .offset-by-five {
+.ct .offfive {
   padding-left: 300px;
 }
-.container .offset-by-six {
+.ct .offsix {
   padding-left: 360px;
 }
-.container .offset-by-seven {
+.ct .offseven {
   padding-left: 420px;
 }
-.container .offset-by-eight {
+.ct .offeight {
   padding-left: 480px;
 }
-.container .offset-by-nine {
+.ct .offnine {
   padding-left: 540px;
 }
-.container .offset-by-ten {
+.ct .offten {
   padding-left: 600px;
 }
-.container .offset-by-eleven {
+.ct .offeleven {
   padding-left: 660px;
 }
-.container .offset-by-twelve {
+.ct .offtwelve {
   padding-left: 720px;
 }
-.container .offset-by-thirteen {
+.ct .offthirteen {
   padding-left: 780px;
 }
-.container .offset-by-fourteen {
+.ct .offfourteen {
   padding-left: 840px;
 }
-.container .offset-by-fithteen {
+.ct .offfithteen {
   padding-left: 900px;
 }
-.container .one-third.column {
+.ct .one-third.col {
   width: 300px;
 }
-.container .two-third.column {
+.ct .two-third.col {
   width: 620px;
 }
 .row {
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  .container {
+  .ct {
     width: 768px;
   }
-  .container .column,
-  .container .columns,
-  .container {
+  .ct .col,
+  .ct .cols {
     margin-left: 10px;
     margin-right: 10px;
   }
-  .container .column.alpha,
-  .container .columns.alpha,
-  .container .alpha {
+  .ct .col.alpha,
+  .ct .cols.alpha {
     margin-right: 10px;
   }
-  .container .column.omega,
-  .container .columns.omega,
-  .container .omega {
+  .ct .col.omega,
+  .ct .cols.omega {
     margin-right: 10px;
   }
-  .container .alpha-omega {
+  .ct .alpha-omega {
     margin-left: 0;
     margin-right: 0;
   }
-  .container .one.column {
+  .ct .one.column {
     width: 28px;
   }
-  .container .one.columns {
+  .ct .one.cols {
     width: 28px;
   }
-  .container .two.columns {
+  .ct .two.cols {
     width: 76px;
   }
-  .container .three.columns {
+  .ct .three.cols {
     width: 124px;
   }
-  .container .four.columns {
+  .ct .four.cols {
     width: 172px;
   }
-  .container .five.columns {
+  .ct .five.cols {
     width: 220px;
   }
-  .container .six.columns {
+  .ct .six.cols {
     width: 268px;
   }
-  .container .seven.columns {
+  .ct .seven.cols {
     width: 316px;
   }
-  .container .eight.columns {
+  .ct .eight.cols {
     width: 364px;
   }
-  .container .nine.columns {
+  .ct .nine.cols {
     width: 412px;
   }
-  .container .ten.columns {
+  .ct .ten.cols {
     width: 460px;
   }
-  .container .eleven.columns {
+  .ct .eleven.cols {
     width: 508px;
   }
-  .container .twelve.columns {
+  .ct .twelve.cols {
     width: 556px;
   }
-  .container .thirteen.columns {
+  .ct .thirteen.cols {
     width: 604px;
   }
-  .container .fourteen.columns {
+  .ct .fourteen.cols {
     width: 652px;
   }
-  .container .fithteen.columns {
+  .ct .fithteen.cols {
     width: 700px;
   }
-  .container .sixteen.columns {
+  .ct .sixteen.cols {
     width: 748px;
   }
-  .container .offset-by-one {
+  .ct .offone {
     padding-left: 48px;
   }
-  .container .offset-by-two {
+  .ct .offtwo {
     padding-left: 96px;
   }
-  .container .offset-by-three {
+  .ct .offthree {
     padding-left: 144px;
   }
-  .container .offset-by-four {
+  .ct .offfour {
     padding-left: 192px;
   }
-  .container .offset-by-five {
+  .ct .offfive {
     padding-left: 240px;
   }
-  .container .offset-by-six {
+  .ct .offsix {
     padding-left: 288px;
   }
-  .container .offset-by-seven {
+  .ct .offseven {
     padding-left: 336px;
   }
-  .container .offset-by-eight {
+  .ct .offeight {
     padding-left: 384px;
   }
-  .container .offset-by-nine {
+  .ct .offnine {
     padding-left: 432px;
   }
-  .container .offset-by-ten {
+  .ct .offten {
     padding-left: 480px;
   }
-  .container .offset-by-eleven {
+  .ct .offeleven {
     padding-left: 528px;
   }
-  .container .offset-by-twelve {
+  .ct .offtwelve {
     padding-left: 576px;
   }
-  .container .offset-by-thirteen {
+  .ct .offthirteen {
     padding-left: 624px;
   }
-  .container .offset-by-fourteen {
+  .ct .offfourteen {
     padding-left: 672px;
   }
-  .container .offset-by-fithteen {
+  .ct .offfithteen {
     padding-left: 720px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .container {
+  .ct {
     width: 300px;
   }
-  .container .column,
-  .container .columns {
+  .ct .col,
+  .ct .cols {
     margin: 0;
   }
-  .container .one.column,
-  .container .one.columns,
-  .container .two.columns,
-  .container .three.columns,
-  .container .four.columns,
-  .container .five.columns,
-  .container .six.columns,
-  .container .seven.columns,
-  .container .eight.columns,
-  .container .nine.columns,
-  .container .ten.columns,
-  .container .eleven.columns,
-  .container .twelve.columns,
-  .container .thirteen.columns,
-  .container .fourteen.columns,
-  .container .fithteen.columns,
-  .container .sixteen.columns,
-  .container .one-third.column,
-  .container .two-third.column {
+  .ct .one.col,
+  .ct .one.cols,
+  .ct .two.cols,
+  .ct .three.cols,
+  .ct .four.cols,
+  .ct .five.cols,
+  .ct .six.cols,
+  .ct .seven.cols,
+  .ct .eight.cols,
+  .ct .nine.cols,
+  .ct .ten.cols,
+  .ct .eleven.cols,
+  .ct .twelve.cols,
+  .ct .thirteen.cols,
+  .ct .fourteen.cols,
+  .ct .fithteen.cols,
+  .ct .sixteen.cols,
+  .ct .one-third.col,
+  .ct .two-third.col {
     width: 300px;
   }
-  .container .offset-by-one,
-  .container .offset-by-two,
-  .container .offset-by-three,
-  .container .offset-by-four,
-  .container .offset-by-five,
-  .container .offset-by-six,
-  .container .offset-by-seven,
-  .container .offset-by-eight,
-  .container .offset-by-nine,
-  .container .offset-by-ten,
-  .container .offset-by-eleven,
-  .container .offset-by-twelve,
-  .container .offset-by-thirteen,
-  .container .offset-by-fourteen,
-  .container .offset-by-fithteen {
+  .ct .offone,
+  .ct .offtwo,
+  .ct .offthree,
+  .ct .offfour,
+  .ct .offfive,
+  .ct .offsix,
+  .ct .offseven,
+  .ct .offeight,
+  .ct .offnine,
+  .ct .offten,
+  .ct .offeleven,
+  .ct .offtwelve,
+  .ct .offthirteen,
+  .ct .offfourteen,
+  .ct .offfithteen {
     padding-left: 0;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .container {
+  .ct {
     width: 300px;
   }
-  .container .column,
-  .container .columns {
+  .ct .col,
+  .ct .cols {
     margin: 0;
   }
-  .container .one.column,
-  .container .one.columns,
-  .container .two.columns,
-  .container .three.columns,
-  .container .four.columns,
-  .container .five.columns,
-  .container .six.columns,
-  .container .seven.columns,
-  .container .eight.columns,
-  .container .nine.columns,
-  .container .ten.columns,
-  .container .eleven.columns,
-  .container .twelve.columns,
-  .container .thirteen.columns,
-  .container .fourteen.columns,
-  .container .fithteen.columns,
-  .container .sixteen.columns,
-  .container .one-third.column,
-  .container .two-third.column {
+  .ct .one.col,
+  .ct .one.cols,
+  .ct .two.cols,
+  .ct .three.cols,
+  .ct .four.cols,
+  .ct .five.cols,
+  .ct .six.cols,
+  .ct .seven.cols,
+  .ct .eight.cols,
+  .ct .nine.cols,
+  .ct .ten.cols,
+  .ct .eleven.cols,
+  .ct .twelve.cols,
+  .ct .thirteen.cols,
+  .ct .fourteen.cols,
+  .ct .fithteen.cols,
+  .ct .sixteen.cols,
+  .ct .one-third.col,
+  .ct .two-third.col {
     width: 420px;
   }
 }
-.container:after,
+.ct:after,
 .clear {
   clear: both;
   display: block;
   height: 0;
   visibility: hidden;
 }
-.container:after {
+.ct:after {
   content: "\0020";
   visibility: hidden;
 }
