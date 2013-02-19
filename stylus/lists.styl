@@ -1,0 +1,45 @@
+
+ul,
+ol
+  margin-bottom 20px
+
+ul
+  list-style none outside
+  
+  &.square,
+  &.circle,
+  &.disc
+    list-style-position outside
+    margin-left 30px
+
+  &.square
+    list-style-type square
+  &.circle
+    list-style-type circle
+  &.disc
+    list-style-type disc
+
+  &.large
+    li
+      line-height 21px
+
+ol
+  list-style decimal
+  margin-left 30px
+
+ul ul,
+ul ol,
+ol ol,
+ol ul
+  font-size 90%
+  margin 4px 0 5px 30px
+
+  li
+    margin-bottom 6px
+
+li
+  line-height 18px
+  margin-bottom 12px
+
+  p
+    line-height 21px

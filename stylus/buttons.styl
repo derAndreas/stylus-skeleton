@@ -1,0 +1,66 @@
+
+// rgba definitions for linear gradient
+colorFrom = rgba(255, 255, 255, 0.2)
+colorTo = rgba(0, 0, 0, 0.2)
+
+colorHoverFrom = rgba(255, 255, 255, 0.3)
+colorHoverTo = rgba(0, 0, 0, 0.3)
+
+colorActiveFrom = rgba(255, 255, 255, 0.35)
+colorActiveTo = rgba(10, 10, 10, 0.4)
+
+.button,
+button,
+input[type=submit],
+input[type=reset],
+input[type=button]
+  background #eee
+  background linear-gradient(top, colorFrom, colorTo)
+  
+  border 1px solid #aaa
+  border-top 1px solid #ccc
+  border-left 1px solid #ccc
+  
+  border-radius(3px)
+
+  color #444
+  cursor pointer
+  display inline-block
+  font-family  "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-size 11px
+  font-weight bold
+  line-height 20px
+
+  margin-bottom 20px
+  padding 8px 10px
+
+  text-decoration none
+  text-shadow  0 1px rgba(255, 255, 255, .75)
+
+
+  &:hover
+    color #222
+    background #ddd
+    background linear-gradient(top, colorHoverFrom, colorHoverTo)
+    border 1px solid #888
+    border-left 1px solid #aaa
+    border-top 1px solid #aaa
+
+  &:active
+    border 1px solid #666
+    background #ccc
+    background linear-gradient(top, colorActiveFrom, colorActiveTo)
+
+
+  &.full-width
+    padding-left 0 !important
+    padding-right 0 !important
+    text-align center
+    width 100%
+
+/* Fix for Mozille border + padding issues */
+button::-moz-focus-inner,
+input::-moz-focus-inner
+  border 0
+  padding 0
+

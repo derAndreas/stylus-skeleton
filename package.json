@@ -1,0 +1,21 @@
+{
+  "name": "Skeleton",
+  "description": "Stylus version of Skeleton CSS Boilerplate",
+  "version": "0.0.1",
+  "author": {
+    "name": "Andreas Mairhofer",
+    "email": "andreas@classphp.de"
+  },
+  "main": "skeleton.js",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "stylus": "*"
+  },
+  "optionalDependencies": {},
+  "_from": "Skeleton@*",
+  "devDependencies": {
+    "jade": "*"
+  }
+}

@@ -1,0 +1,183 @@
+column_names16 = one two three four five six seven eight nine ten eleven twelve thirteen fourteen fithteen sixteen
+column_names15 = one two three four five six seven eight nine ten eleven twelve thirteen fourteen fithteen 
+
+mixin_container_columns(start, inc)
+  .one.column
+    width start px
+
+  for name, i in column_names16 
+    .{name}.columns
+      width start + i * inc px
+  for name, i in column_names15 
+    .offset-by-{name}
+      padding-left inc + i * inc px
+
+.container
+  margin 0 auto
+  padding 0
+  position relative
+  width 960px
+
+  .column,
+  .columns
+    display inline
+    float left
+    margin-left 10px
+    margin-right 10px
+
+    &.alpha
+      margin-left 0
+    &.omega
+      margin-right 0
+  
+  mixin_container_columns(40, 60)
+
+  .one-third.column
+    width 300px
+  .two-third.column
+    width 620px
+
+.row
+  margin-bottom 20px
+
+
+
+// #Tablet (Portrait), width 768px
+
+@media only screen and (min-width: 768px) and (max-width: 959px)
+  .container
+    width 768px
+
+    .column,
+    .columns
+    // todo: needed?
+      margin-left 10px
+      margin-right 10px
+
+      &.alpha
+        margin-right 10px
+      &.omega
+        margin-right 10px
+
+    .alpha-omega
+      margin-left 0
+      margin-right 0
+
+    mixin_container_columns(28, 48)
+  
+
+//  #Mobile (Portrait), width 320px
+
+@media only screen and (max-width: 767px)
+  .container
+    width 300px
+
+    .column,
+    .columns
+      margin 0
+
+    .one.column
+    .one.columns
+    .two.columns
+    .three.columns
+    .four.columns
+    .five.columns
+    .six.columns
+    .seven.columns
+    .eight.columns
+    .nine.columns
+    .ten.columns
+    .eleven.columns
+    .twelve.columns
+    .thirteen.columns
+    .fourteen.columns
+    .fithteen.columns
+    .sixteen.columns
+    .one-third.column
+    .two-third.column
+      width 300px
+
+    .offset-by-one
+    .offset-by-two
+    .offset-by-three
+    .offset-by-four
+    .offset-by-five
+    .offset-by-six
+    .offset-by-seven
+    .offset-by-eight
+    .offset-by-nine
+    .offset-by-ten
+    .offset-by-eleven
+    .offset-by-twelve
+    .offset-by-thirteen
+    .offset-by-fourteen
+    .offset-by-fithteen
+      padding-left 0
+
+
+//#Mobile (Landscape), width 480px
+@media only screen and (min-width: 480px) and (max-width: 767px)
+  .container
+    width 300px
+
+    .column,
+    .columns
+      margin 0
+    
+    
+    .one.column,
+    .one.columns,
+    .two.columns,
+    .three.columns,
+    .four.columns,
+    .five.columns,
+    .six.columns,
+    .seven.columns,
+    .eight.columns,
+    .nine.columns,
+    .ten.columns,
+    .eleven.columns,
+    .twelve.columns,
+    .thirteen.columns,
+    .fourteen.columns,
+    .fithteen.columns,
+    .sixteen.columns,
+    .one-third.column,
+    .two-third.column
+      width 420px
+
+
+
+// clearing
+
+.container:after
+.clear
+  clear both
+  display block
+  height 0
+  visibility hidden
+
+.container:after
+  content "\0020"
+  visibility hidden 
+
+.clear
+  overflow hidden
+  width 0
+
+.clearfix
+.row
+  zoom 1
+
+  &:before
+  &:after
+    content "\0020"
+    display block
+    height 0
+    overflow hidden
+    visibility hidden
+    width 0
+
+  &:after
+    clear both
+

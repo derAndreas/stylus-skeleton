@@ -1,0 +1,237 @@
+!!! 5
+html(lang="en)
+  head
+    title Basic example
+    meta(name="author", content="Andreas Mairhofer")
+    meta(name="author", content="Dave Gamache")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+    
+    link(rel="stylesheet", href="../builds/style.css")
+    link(rel="shortcut icon", href="images/favicon.ico")
+
+    link(rel="apple-touch-icon", sizes="57x57", href="images/apple-touch-icon.png")
+    link(rel="apple-touch-icon", sizes="72x72", href="images/apple-touch-icon-72x72.png")
+    link(rel="apple-touch-icon", sizes="114x114", href="images/apple-touch-icon-114x114.png")
+    style(type="text/css")
+      div.example-grid div.columns {
+        background: #DDD;
+        border-radius: 2px;
+        color: #555;
+        font-size: 12px;
+        font-weight: bold;
+        height: 25px;
+        line-height: 25px;
+        margin-bottom: 10px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      blockquote.license p {
+        font-size: 0.8em
+      }
+
+  body
+    div.container
+      div.three.columns
+        nav
+          h3 Skeleton-stylus
+          ul
+            li
+              a(href="#whatAndWhy") What & Why
+            li
+              a(href="#grid") Grid
+            li
+              a(href="#typography") Typography
+            li
+              a(href="#buttons") Buttons
+            li
+              a(href="#forms") Forms
+            li
+              a(href="#mediaQueries") Media Queries
+            li
+              a(href="#examples") Examples
+            li
+              a(href="#github") Github Download
+            li
+              a(href="#license") License
+
+      div.twelve.columns
+        header
+          h1 Skeleton-stylus
+          h2 A simple example of the power of this css boilerplate thingy
+          div
+            h3 What is it?
+            p Based on the excellent work of 
+              a(href="http://www.getskeleton.com/") Dave Gamache.
+              | This fork uses 
+              a(href="http://learnboost.github.com/stylus/") stylus
+              |  and  
+              a(href="http://visionmedia.github.com/nib/") nib
+              |  as a css precompiler to have more flexibility.
+            h4 This example...
+            p The example you are looking right now is a very simple introduction 
+
+        hr
+        
+        div.clearfix(id="grid")
+          h3 The Grid
+          p Skeleton's base grid is a variation of the 960 grid system. The syntax is simple and it's effective cross browser, but the awesome part is that it also has the flexibility to go mobile like a champ. 
+            strong Go ahead, resize the browser and watch as the layout reacts!
+          div.example-grid
+            div.one.columns.alpha One
+            div.eleven.columns.omega Eleven
+            div.two.columns.alpha Two
+            div.ten.columns.omega Ten
+            div.three.columns.alpha Three
+            div.nine.columns.omega Nine
+            div.four.columns.alpha Four
+            div.eight.columns.omega Eight
+            div.five.columns.alpha Five
+            div.seven.columns.omega Seven
+            div.six.columns.alpha Six
+            div.six.columns.omega Six
+            div.seven.columns.alpha Seven
+            div.five.columns.omega Five
+            div.eight.columns.alpha Eight
+            div.four.columns.omega Four
+            div.nine.columns.alpha Nine
+            div.three.columns.omega Three
+            div.ten.columns.alpha Ten
+            div.two.columns.omega Two
+            div.eleven.columns.alpha Eleven
+            div.one.columns.omega One
+
+        hr
+
+        div.clearfix(id="typography")
+          h3 Typography
+          p The typography of Skeleton is designed to create a strong hierarchy with basic styles. The primary font is the classic Helvetica Neue, but the font stack can be easily changed with just a couple adjustments. Regular paragraphs are set at a 14px base with 21px line height.
+          
+          div.row
+            div.seven.columns.alpha
+              h1 Heading H1
+              h2 Heading H2
+              h3 Heading H3
+              h4 Heading H4
+              h5 Heading H5
+              h6 Heading H6
+            div.five.columns.omega
+              blockquote
+                p This is a blockquote style example. It stands out, but is awesome
+                cite Dave Gamache, Skeleton Creator
+        
+        hr
+
+        div.clearfix(id="buttons")
+          h3 Buttons
+          p Buttons are intended for action and thus should have appropriate weight. The standard button is given that weight with a little bit of depth and a strong hover.
+          
+          <a href="#" class="button">Click Me For Action</a>
+
+        hr
+
+        div.clearfix(id="forms")
+          h3 Forms
+          p Forms can be one of the biggest pains for web developers, but just use these dead simple styles and you should be good to go.
+          
+          div.four.columns.alpha
+            form
+
+              label(for="regularInput") Regular Input
+              input(type="text", id="regularInput")
+
+              label(for="regularTextarea") Regular Textarea
+              textarea(id="regularTextare")
+          
+              label(for="selectList") Select List 
+                select(id="selectList")	
+                  option(value="1") Option 1
+                  option(value="2") Option 2
+                  option(value="3") Option 3
+                  option(value="4") Option 4
+              
+              fieldset
+                legend Checkboxes
+                label(for="regularCheckboxes")
+                  input(type="checkbox", id="regularCheckboxes", value="1")
+                  span Regular Checkbox
+
+                label(for="regularCheckboxes")
+                  input(type="checkbox", id="regularCheckboxes", value="1")
+                  span Regular Checkbox
+
+              fieldset
+                legend Radio Buttons
+                label(for="regularRadio")
+                  input(type="radio", id="regularRadio", value="1")
+                  span Regular Radio
+
+                label(for="secondRegularRadio")
+                  input(type="radio", id="secondRegularRadio", value="2")
+                  span Regular Radio
+
+              button(type="submit") Submit Form
+
+          br.clear
+
+        hr
+
+        div.clearfix(id="mediaQueries")
+          h3 Media Queries
+          p Skeleton uses a 
+            strong lot
+            |  of media queries to serve the scalable grid, but also for the convenience of styling your site on different size screens. Skeleton's media queries are almost exclusively targeted at max and min widths rather than device sizes or orientations. The advantage of this is browsers and future mobile devices that don't map to exact set dimensions will still benefit from the styles. That being said, all of the queries were written to be optimal on Apple iOS devices. The built in media queries include:
+
+          ul.square
+            li
+              strong Smaller than 960
+              | : Smaller than the standard base grid
+            li
+              strong Tablet Portrait
+              | : Between 768px and 959px
+            li
+              strong All Mobile Sizes
+              | : Less than 767px
+            li
+              strong Just Mobile Landscape
+              | : Between 480px and 767px
+            li
+              strong Just Mobile Portrait
+              | : Less than 479px
+
+        hr
+
+        div.clearfix(id="examples")
+          h3 Examples
+          p A List of examples and alternation of the base Skeleton boilerplate. Will be extended during devolpment
+
+          ul.disc
+            li
+              a(href="#") Basic standard Example
+
+        hr
+
+        div.clearfix(id="Github Download")
+          h3 Github Download
+          p As this is a pure fork of Sekeletion boilerplate and any help is welcome, you can download and fork this stylus version at Github.
+          p If you find any issues or want to support with new features, please file an issue or pull request
+
+          ul
+            li
+              a(href="#") Github Page
+            li
+              a(href="#issues") Github Issue Page
+
+        hr
+
+        div.clearfix(id="License")
+          h3 License
+          p Skeletion-stylus uses of course the MIT License, which can be found 
+            a(href="http://opensource.org/licenses/mit-license.php") here
+
+          blockquote.license
+            h5 The MIT License (MIT)
+            p Copyright (c) 2012 Andreas Mairhofer
+            p Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+            p The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+            p THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
