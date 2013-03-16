@@ -1,6 +1,6 @@
 
-Skeleton-styles
-===============
+Skeleton-styles Modern UI Theme
+===============================
 
 Stylus version of the Skeleton CSS Boilerplate.
 Based on the original work of Dave Gamache (http://getskeleton.com) this projects forks the 
@@ -19,6 +19,7 @@ Branches
 ---------
   * original - 1:1 translation of Skeleton CSS to Skeleton Stylus version
   * shortnames - reduce filesize by using shorted CSS selectors
+  * modern-ui - theme for modern-ui, based on original branch
 
 
 Examples

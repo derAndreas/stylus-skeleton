@@ -1,6 +1,6 @@
 {
-  "name": "Skeleton",
-  "description": "Stylus version of Skeleton CSS Boilerplate",
+  "name": "Skeleton Modern UI Theme",
+  "description": "Stylus version of Skeleton CSS Boilerplate with Modern UI Theme",
   "version": "0.0.1",
   "author": {
     "name": "Andreas Mairhofer",
@@ -11,7 +11,8 @@
     "node": "*"
   },
   "dependencies": {
-    "stylus": "*"
+    "stylus": "*",
+    "nib": "~0.9.1"
   },
   "optionalDependencies": {},
   "_from": "Skeleton@*",
