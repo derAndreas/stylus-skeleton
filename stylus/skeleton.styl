@@ -1,6 +1,6 @@
 
 /**
- Skeleton Stylus version 0.1
+ Skeleton Stylus version 0.1 modern UI Theme
   by Andreas Mairhofer 2012
 
  Fork of Dave Gamache Skeleton work
@@ -10,14 +10,27 @@
 
 */
 
+@import 'skeleton-colors'
 @import 'skeleton-base'
 @import 'skeleton-typography'
-@import 'skeleton-blockquotes'
-@import 'skeleton-links'
+//@import 'skeleton-blockquotes'
 @import 'skeleton-lists'
 @import 'skeleton-buttons'
 @import 'skeleton-forms'
 @import 'skeleton-grid'
 @import 'skeleton-layout'
 @import 'skeleton-font'
+@import 'skeleton-boxes'
+//@import 'skeleton-links'
+
+
+body
+  background-color #fff
+  color font-color
+  font 14px/1.4em arial, sans-serif
+  /* Fix for webkit rendering */
+  -webkit-font-smoothing antialiased 
+  -webkit-text-size-adjust 100%
+
+
 

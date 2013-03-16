@@ -1,66 +1,89 @@
+@import 'nib'
+@import 'skeleton-colors'
 
-// rgba definitions for linear gradient
-colorFrom = rgba(255, 255, 255, 0.2)
-colorTo = rgba(0, 0, 0, 0.2)
 
-colorHoverFrom = rgba(255, 255, 255, 0.3)
-colorHoverTo = rgba(0, 0, 0, 0.3)
 
-colorActiveFrom = rgba(255, 255, 255, 0.35)
-colorActiveTo = rgba(10, 10, 10, 0.4)
+mixin_btn_color(name, col, colh, fcol = no)
+  .btn-{name}
+      background-color col
+      //background-image linear-gradient(top, col, col)
 
-.button,
-button,
-input[type=submit],
-input[type=reset],
-input[type=button]
-  background #eee
-  background linear-gradient(top, colorFrom, colorTo)
-  
-  border 1px solid #aaa
-  border-top 1px solid #ccc
-  border-left 1px solid #ccc
-  
-  border-radius(3px)
+      if fcol is no
+        color #fff
+      else
+        color fcol
 
-  color #444
+      text-shadow 0 1px 0 rgba(0, 0, 0, 0.25)
+
+      &:hover
+        background-color colh
+        //background-image linear-gradient(top, colh, colh)
+
+
+.btn
+  background-color color-grey
+  //background-image linear-gradient(top, color-grey, color-grey)
+  background-repeat repeat-x
+  background-clip padding
+  border none
   cursor pointer
+  color #333
   display inline-block
-  font-family  "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif
-  font-size 11px
-  font-weight bold
-  line-height 20px
+  font-family "open sans", arial, sans-serif // check if needed
+  font-size 14px
+  line-height 32px
+  min-width 42px
+  margin 10px 0 0 0
+  outline none
+  overflow visible
+  padding 5px 10px
+  position relative
 
-  margin-bottom 20px
-  padding 8px 10px
-
+  text-shadow 0 1px 0 #fff
+  text-align center
   text-decoration none
-  text-shadow  0 1px rgba(255, 255, 255, .75)
 
+  vertical-align inherit
+  white-space nowrap
+  zoom 1
+  z-index 1
+  *display inline
 
+  &:active,
+  &.active,
+  &:focus,
   &:hover
-    color #222
-    background #ddd
-    background linear-gradient(top, colorHoverFrom, colorHoverTo)
-    border 1px solid #888
-    border-left 1px solid #aaa
-    border-top 1px solid #aaa
+    background-color color-grey-hover
+    //background-image linear-gradient(top, color-grey-hover, color-grey-hover)
+    background-repeat repeat-x
+    outline none
+    z-index 100
 
-  &:active
-    border 1px solid #666
-    background #ccc
-    background linear-gradient(top, colorActiveFrom, colorActiveTo)
+  &:active,
+  &.active
+    background-color color-grey
+    //background-image linear-gradient(top, color-grey, color-grey-hover)
+    box-shadow inset 0 1px 8px rgba(0, 0, 0, 0.25) // todo check filter: for ie
+
+  &:focus
+    border-color #4d90fe
+  &::-moz-focus-inner
+    padding 0
+    border 0
 
 
-  &.full-width
-    padding-left 0 !important
-    padding-right 0 !important
-    text-align center
-    width 100%
+mixin_btn_color('red', color-red, color-red-hover)
+mixin_btn_color('green', color-green, color-green-hover)
+mixin_btn_color('blue', color-blue, color-blue-hover)
+mixin_btn_color('lila', color-lila, color-lila-hover)
+mixin_btn_color('orange', color-orange, color-orange-hover)
 
-/* Fix for Mozille border + padding issues */
-button::-moz-focus-inner,
-input::-moz-focus-inner
-  border 0
-  padding 0
+.btn-small
+  font-size 12px
+  line-height 18px
+  padding 4px 8px
 
+.btn-big
+  font-size 18px
+  line-height 42px
+  padding 10px 15px

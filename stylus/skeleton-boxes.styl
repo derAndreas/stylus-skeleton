@@ -1,0 +1,57 @@
+mixin_box_color(name, col, colhover, outl, fcolor = false)
+  .box-{name}
+    background-color col
+    //background-image linear-gradient(top, col, col)
+    color fcolor if fcolor
+
+    &:hover
+      background-color colhover
+      //background-image linear-gradient(top, colhover, colhover)
+      outline 3px outl solid
+
+.box
+  background-color color-darkgrey
+  //background-image linear-gradient(top, color-darkgrey, color-darkgrey)
+  box-shadow inset 0 0 1px #ffc
+  cursor pointer
+  color #fff
+  display block
+  float left
+  font-size 12px
+  font-smooth always
+  height 100%
+  line-height 16px
+  margin 0 10px 10px 0
+  overflow hidden
+  padding 10px 15px 30px 15px
+  position relative
+  text-decoration none
+  width 150px
+
+  &:hover
+    background-color color-darkgrey-hover
+    //background-image linear-gradient(top, color-darkgrey-hover, color-darkgrey-hover)
+    outline 3px color-outline solid
+
+
+mixin_box_color('grey', color-grey, color-grey-hover, color-outline, color-darkgrey)
+mixin_box_color('red', color-red, color-red-hover, color-outline)
+mixin_box_color('green', color-green, color-green-hover, color-outline)
+mixin_box_color('blue', color-blue, color-blue-hover, color-outline)
+mixin_box_color('lila', color-lila, color-lila-hover, color-outline)
+mixin_box_color('orange', color-orange, color-orange-hover, color-outline)
+
+
+.box-content
+  height 100%
+  font-size 12px
+  line-height 16px
+  overflow hidden
+  position relative
+  text-overflow ellipsis
+  vertical-align top
+  width 100%
+
+.box-size-max
+  width 100% !important
+  height 100% !important
