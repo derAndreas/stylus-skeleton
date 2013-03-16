@@ -5,7 +5,7 @@ html(lang="en)
     meta(name="author", content="Andreas Mairhofer")
     meta(name="author", content="Dave Gamache")
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
-    
+
     link(rel="stylesheet", href="../builds/style.css")
     link(rel="shortcut icon", href="images/favicon.ico")
 
@@ -46,6 +46,8 @@ html(lang="en)
               a(href="#buttons") Buttons
             li
               a(href="#forms") Forms
+            li
+              a(href="#boxes") Boxes
             li
               a(href="#mediaQueries") Media Queries
             li
@@ -126,7 +128,33 @@ html(lang="en)
           h3 Buttons
           p Buttons are intended for action and thus should have appropriate weight. The standard button is given that weight with a little bit of depth and a strong hover.
           
-          <a href="#" class="button">Click Me For Action</a>
+          ul
+            li
+              a.btn(href="#") Normal Button, CSS Class: no additional css class
+            li
+              a.btn.btn-red(href="#") Red Button, CSS Class: btn-red
+            li
+              a.btn.btn-green(href="#") Green Button, CSS Class: btn-green
+            li
+              a.btn.btn-blue(href="#") Blue Button, CSS Class: btn-blue
+            li
+              a.btn.btn-lila(href="#") Lila Button, CSS Class: btn-lila
+            li
+              a.btn.btn-orange(href="#") Orange Button, CSS Class: btn-orange
+
+
+          p Sizes can be changed by adding the btn-<size> css name
+
+          h4 Example
+          
+          ul
+            li
+              a.btn.btn-orange(href="#") Normal Button, CSS Class: no additional css
+            li
+              a.btn.btn-orange.btn-small(href="#") Orange Button, CSS Class: btn-small
+            li
+              a.btn.btn-orange.btn-big(href="#") Orange Button, CSS Class: btn-big
+
 
         hr
 
@@ -173,6 +201,46 @@ html(lang="en)
               button(type="submit") Submit Form
 
           br.clear
+
+        hr
+
+        div.clearfix(id="boxes")
+          h3 boxes
+          p Boxes, used a lot in webdesign history - today called tiles ;), is for highlighting content
+
+          
+          div.box
+            .box-content
+              p Skeleton uses a lot of media queries to serve the scalable grid, but also for the convenience of styling your site on different size screens. Skeleton's media queries are almost exclusively targeted at max and min widths rather than device sizes or orientations. The advantage of this is browsers and future mobile devices that don't map to exact set dimensions will still benefit from the styles. That being said, all of the queries were written to be optimal on Apple iOS devices. The built in media queries include
+
+          div.box.box-grey
+            .box-content
+              p Skeleton uses a lot of media queries to serve the scalable grid, but also for the convenience of styling your site on different size screens. 
+
+          div.box.box-red
+            .box-content
+              p Skeleton uses a lot of media queries to serve the scalable grid, but also for the convenience of styling your site on different size screens. 
+
+          div.box.box-green
+            .box-content
+              p Skeleton uses a lot of media queries to serve the scalable grid, but also for the convenience of styling your site on different size screens. 
+
+          div.box.box-blue
+            .box-content
+              p Skeleton uses a lot of media queries to serve the scalable grid, but also for the convenience of styling your site on different size screens. 
+
+          div.box.box-lila
+            .box-content
+              p Skeleton uses a lot of media queries to serve the scalable grid, but also for the convenience of styling your site on different size screens. 
+
+          div.box.box-orange
+            .box-content
+              p Skeleton uses a lot of media queries to serve the scalable grid, but also for the convenience of styling your site on different size screens. 
+
+          .four.columns
+            .box.box-size-max
+              .box-content
+                p Skeleton uses a lot of media queries to serve the scalable grid, but also for the convenience of styling your site on different size screens. Skeleton's media queries are almost exclusively targeted at max and min widths rather than device sizes or orientations. The advantage of this is browsers and future mobile devices that don't map to exact set dimensions will still benefit from the styles. That being said, all of the queries were written to be optimal on Apple iOS devices. The built in media queries include
 
         hr
 
